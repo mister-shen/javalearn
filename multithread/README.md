@@ -17,5 +17,5 @@
 <br/>(5)守护线程与非守护线程
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo01/image/%E5%AE%88%E6%8A%A4%E7%BA%BF%E7%A8%8B%E4%B8%8E%E9%9D%9E%E5%AE%88%E6%8A%A4%E7%BA%BF%E7%A8%8B.png "在这里输入图片标题")
 <br/>(6)多线程分批处理信息
-![输入图片说明](http://git.oschina.net/uploads/images/2017/0105/082137_85109d07_437188.jpeg "在这里输入图片标题")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo01/image/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%88%86%E6%89%B9%E5%A4%84%E7%90%86%E4%BF%A1%E6%81%AF.png "在这里输入图片标题")
 <br/>(7)join()方法作用：thread.Join把指定的线程加入到当前线程，可以将两个交替执行的线程合并为顺序执行的线程。
