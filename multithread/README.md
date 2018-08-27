@@ -19,3 +19,25 @@
 <br/>(6)多线程分批处理信息
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo01/image/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%88%86%E6%89%B9%E5%A4%84%E7%90%86%E4%BF%A1%E6%81%AF.png "在这里输入图片标题")
 <br/>(7)join()方法作用：thread.Join把指定的线程加入到当前线程，可以将两个交替执行的线程合并为顺序执行的线程。
+
+### 二、多线程之间实现同步
+#### 1、线程安全问题
+（1）线程安全问题
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98.png "在这里输入图片标题")
+<br/>（2）多线程安全问题产生
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98%E4%BA%A7%E7%94%9F.png "在这里输入图片标题")
+<br/>（3）多线程冲突产生
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%86%B2%E7%AA%81%E4%BA%A7%E7%94%9F.png "在这里输入图片标题")
+<br/>（4）线程安全问题解决办法
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95.png "在这里输入图片标题")
+#### 2、线程三大特性
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E7%BA%BF%E7%A8%8B%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7.png "在这里输入图片标题")
+#### 3、线程同步
+（1）多线程如何实现同步
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%90%8C%E6%AD%A5.png "在这里输入图片标题")
+<br/>（2）线程之间同步
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E5%90%8C%E6%AD%A5.png "在这里输入图片标题")
+<br/>（3）同步函数与静态函数区别
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0%E4%B8%8E%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
+#### 3、Java内存模型
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png "在这里输入图片标题")
