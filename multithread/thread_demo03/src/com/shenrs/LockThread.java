@@ -1,15 +1,21 @@
 package com.shenrs;
 
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
- * 共享资源实体类
+ * lock锁实现线程同步
  */
-class Res {
+class Res1 {
     public String userName;
     public String sex;
     // true 生产者生产，消费者等待；false 生产者等待，消费者消费
     public boolean flag = false;
+    public Lock lock = new ReentrantLock();
+    public Condition condition;
 
-    public Res() {
+    public Res1() {
     }
 
     @Override
@@ -24,21 +30,25 @@ class Res {
 /**
  * 生产者
  */
-class Put extends Thread{
-    Res res;
+class Put1 extends Thread{
+    Res1 res;
+    Condition condition;
 
-    public Put(Res res) {
+    public Put1(Res1 res, Condition condition) {
         this.res = res;
+        this.condition = condition;
     }
 
     @Override
     public void run() {
         int count = 0;
         while (true){
-            synchronized (res){
+            try{
+                // 上锁
+                res.lock.lock();
                 if(res.flag){
                     try {
-                        res.wait();
+                        condition.await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -51,8 +61,14 @@ class Put extends Thread{
                     res.sex = "女";
                 }
                 count = (count + 1) % 2;
-                res.flag = false;
-                res.notify();
+                res.flag = true;
+                // 唤醒锁
+                condition.signal();
+            }catch (Exception e) {
+                e.printStackTrace();
+            }finally {
+                //释放锁
+                res.lock.unlock();
             }
         }
     }
@@ -61,20 +77,25 @@ class Put extends Thread{
 /**
  * 消费者
  */
-class Out extends Thread{
-    Res res;
+class Out1 extends Thread{
+    Res1 res;
+    Condition condition;
 
-    public Out(Res res) {
+    public Out1(Res1 res, Condition condition) {
         this.res = res;
+        this.condition = condition;
     }
 
     @Override
     public void run() {
         while (true){
-            synchronized (res) {
+            try {
+                // 上锁
+                res.lock.lock();
                 if(!res.flag){
                     try {
-                        res.wait();
+                        // 添加同步
+                        condition.await();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -82,7 +103,12 @@ class Out extends Thread{
                 System.out.println("name" + res.userName + "sex: " + res.sex);
 //                System.out.println(res.toString());
                 res.flag = false;
-                res.notify();
+                //释放锁
+                condition.signal();
+            }catch (Exception e) {
+                e.printStackTrace();
+            }finally {
+                res.lock.unlock();
             }
         }
     }
@@ -93,12 +119,13 @@ class Out extends Thread{
  * @Description
  * @create 2018-08-27 16:58
  **/
-public class OutInputThread {
+public class LockThread {
 
     public static void main(String[] args) {
-        Res res = new Res();
-        Put put = new Put(res);
-        Out out = new Out(res);
+        Res1 res = new Res1();
+        Condition condition = res.lock.newCondition();
+        Put1 put = new Put1(res, condition);
+        Out1 out = new Out1(res, condition);
         put.start();
         out.start();
     }
