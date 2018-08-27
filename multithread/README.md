@@ -39,5 +39,5 @@
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E7%BA%BF%E7%A8%8B%E4%B9%8B%E9%97%B4%E5%90%8C%E6%AD%A5.png "在这里输入图片标题")
 <br/>（3）同步函数与静态函数区别
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0%E4%B8%8E%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
-#### 3、Java内存模型
+#### 4、Java内存模型
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png "在这里输入图片标题")
