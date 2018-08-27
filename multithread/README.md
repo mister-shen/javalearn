@@ -1,12 +1,12 @@
 # 多线程
-###一、多线程入门
-####1、创建线程的五种方式
+### 一、多线程入门
+#### 1、创建线程的五种方式
 （1）使用继承Thread类方式[(thread_demo01)ThreadDemo01.java]<br/>
 （2）使用实现Runnable接口方式[(thread_demo01)ThreadDemo02.java]<br/>
 （3）使用匿名内部类方式[(thread_demo01)ThreadDemo03.java]<br/>
 （4）callable<br/>
 （5）使用线程池创建线程
-####2、多线程基础知识
+#### 2、多线程基础知识
 (1)线程与进程区别
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo01/image/%E7%BA%BF%E7%A8%8B%E4%B8%8E%E8%BF%9B%E7%A8%8B%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
 <br/>(2)启动线程，不是调用run方法，而是调用start方法
