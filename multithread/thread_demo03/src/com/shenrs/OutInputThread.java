@@ -6,6 +6,8 @@ package com.shenrs;
 class Res {
     public String userName;
     public String sex;
+    // true 生产者生产，消费者等待；false 生产者等待，消费者消费
+    public boolean flag = false;
 
     public Res() {
     }
@@ -34,6 +36,13 @@ class Put extends Thread{
         int count = 0;
         while (true){
             synchronized (res){
+                if(res.flag){
+                    try {
+                        res.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
                 if(count == 0){
                     res.userName = "张三";
                     res.sex = "男";
@@ -42,6 +51,8 @@ class Put extends Thread{
                     res.sex = "女";
                 }
                 count = (count + 1) % 2;
+                res.flag = false;
+                res.notify();
             }
         }
     }
@@ -61,7 +72,17 @@ class Out extends Thread{
     public void run() {
         while (true){
             synchronized (res) {
-                System.out.println(res.toString());
+                if(!res.flag){
+                    try {
+                        res.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+                System.out.println("name" + res.userName + "sex: " + res.sex);
+//                System.out.println(res.toString());
+                res.flag = false;
+                res.notify();
             }
         }
     }
