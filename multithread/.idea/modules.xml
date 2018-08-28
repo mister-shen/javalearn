@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/thread01/thread01.iml" filepath="$PROJECT_DIR$/thread01/thread01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread02/thread02.iml" filepath="$PROJECT_DIR$/thread02/thread02.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_batch/thread_batch.iml" filepath="$PROJECT_DIR$/thread_batch/thread_batch.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_demo01/thread_demo01.iml" filepath="$PROJECT_DIR$/thread_demo01/thread_demo01.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_demo02/thread_demo02.iml" filepath="$PROJECT_DIR$/thread_demo02/thread_demo02.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_demo03/thread_demo03.iml" filepath="$PROJECT_DIR$/thread_demo03/thread_demo03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_demo04/thread_demo04.iml" filepath="$PROJECT_DIR$/thread_demo04/thread_demo04.iml" />
     </modules>
   </component>
 </project>
