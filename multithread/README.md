@@ -41,3 +41,23 @@
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/%E5%90%8C%E6%AD%A5%E5%87%BD%E6%95%B0%E4%B8%8E%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
 #### 4、Java内存模型
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo02/image/java%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png "在这里输入图片标题")
+
+### 三、多线程间通讯
+
+（1）生产者与消费者
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/%E7%94%9F%E4%BA%A7%E8%80%85%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85.png "在这里输入图片标题")
+（2）生成者与消费者通讯
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/%E7%94%9F%E6%88%90%E8%80%85%E4%B8%8E%E6%B6%88%E8%B4%B9%E8%80%85%E9%80%9A%E8%AE%AF.png "在这里输入图片标题")
+（3）lock与syn区别
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/lock%E4%B8%8Esyn%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
+（4）wait与sleep区别
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/wait%E4%B8%8Esleep%E5%8C%BA%E5%88%AB.png "在这里输入图片标题")
+（5）ThreadLock原理剖析
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/ThreadLock%E5%8E%9F%E7%90%86%E5%89%96%E6%9E%90.png "在这里输入图片标题")
+（6）怎么停止线程
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/%E6%80%8E%E4%B9%88%E5%81%9C%E6%AD%A2%E7%BA%BF%E7%A8%8B.png "在这里输入图片标题")
+（7）总结
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/%E6%80%BB%E7%BB%93.png "在这里输入图片标题")
+
+
+
