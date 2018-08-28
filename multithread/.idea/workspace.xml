@@ -10,7 +10,50 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="220">
+                <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="77" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OutInputThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/OutInputThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="95" column="29" lean-forward="true" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+              <folding>
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LockThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/LockThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +87,7 @@
         <option value="$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadVolatile.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/ProducerConsumer.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo08.java" />
         <option value="$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadDemo2.java" />
         <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/AddSubtractThread.java" />
@@ -51,6 +95,10 @@
         <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/StopThreadDemo.java" />
         <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/ThreadDemo01.java" />
         <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/OutInputThread.java" />
+=======
+        <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/OutInputThread.java" />
+        <option value="$PROJECT_DIR$/thread_demo03/src/com/shenrs/LockThread.java" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       </list>
     </option>
   </component>
@@ -74,7 +122,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1" />
     <option name="y" value="1" />
     <option name="width" value="1364" />
@@ -95,8 +143,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+=======
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,19 +181,32 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="shenrs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="multithread" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thread_demo03" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shenrs" type="462c0819:PsiDirectoryNode" />
+              <item name="LockThread.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
     <property name="nodejs_interpreter_path" value="C:/ProgramFiles/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -155,11 +219,19 @@
       <recent name="com.shenrs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="E:\projects\javalearn\multithread\thread_demo03\src\com\shenrs" />
       <recent name="E:\projects\javalearn\multithread\thread_demo03\image" />
       <recent name="E:\projects\javalearn\multithread\thread_demo02\image" />
       <recent name="E:\projects\javalearn\multithread\thread_demo02\src\com\shenrs" />
       <recent name="E:\projects\javalearn\multithread\thread_demo01\image" />
+=======
+      <recent name="E:\project\javalearn\multithread\thread_demo03\src\com\shenrs" />
+      <recent name="E:\projects\javalearn\multithread\thread_demo02\image" />
+      <recent name="E:\projects\javalearn\multithread\thread_demo02\src\com\shenrs" />
+      <recent name="E:\projects\javalearn\multithread\thread_demo01\image" />
+      <recent name="E:\projects\javalearn\multithread\thread_batch\src\com\shenrs" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
     </key>
   </component>
   <component name="RunDashboard">
@@ -174,15 +246,24 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.StopThreadDemo">
     <configuration name="AddSubtractThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="Application.LockThread">
+    <configuration name="LockThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.shenrs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="com.shenrs.AddSubtractThread" />
+=======
+      <option name="MAIN_CLASS_NAME" value="com.shenrs.LockThread" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -213,14 +294,22 @@
       <module name="thread_demo03" />
       <envs />
     </configuration>
+<<<<<<< HEAD
     <configuration name="StopThreadDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="ProducerConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.shenrs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="com.shenrs.StopThreadDemo" />
+=======
+      <option name="MAIN_CLASS_NAME" value="com.shenrs.ProducerConsumer" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -351,6 +440,7 @@
       <listeners />
     </configuration>
     <list size="5">
+<<<<<<< HEAD
       <item index="0" class="java.lang.String" itemvalue="Application.ThreadDemo2" />
       <item index="1" class="java.lang.String" itemvalue="Application.AddSubtractThread" />
       <item index="2" class="java.lang.String" itemvalue="Application.ThreadDemo" />
@@ -364,6 +454,21 @@
         <item index="2" class="java.lang.String" itemvalue="Application.OutInputThread" />
         <item index="3" class="java.lang.String" itemvalue="Application.ThreadDemo" />
         <item index="4" class="java.lang.String" itemvalue="Application.ThreadDemo2" />
+=======
+      <item index="0" class="java.lang.String" itemvalue="Application.ThreadVolatile" />
+      <item index="1" class="java.lang.String" itemvalue="Application.VolatileNoAtomic" />
+      <item index="2" class="java.lang.String" itemvalue="Application.OutInputThread" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LockThread" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.LockThread" />
+        <item index="1" class="java.lang.String" itemvalue="Application.OutInputThread" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ProducerConsumer" />
+        <item index="3" class="java.lang.String" itemvalue="Application.VolatileNoAtomic" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ThreadVolatile" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       </list>
     </recent_temporary>
   </component>
@@ -381,16 +486,29 @@
       <option name="presentableId" value="Default" />
       <updated>1535334527942</updated>
       <workItem from="1535334553905" duration="7639000" />
+<<<<<<< HEAD
       <workItem from="1535345494220" duration="15319000" />
       <workItem from="1535418345304" duration="18186000" />
+=======
+      <workItem from="1535345494220" duration="15295000" />
+      <workItem from="1535375727767" duration="4332000" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="41571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="27693000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -399,13 +517,18 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17918456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -416,11 +539,25 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4004525" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2579425" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40032154" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -445,6 +582,62 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/thread_batch/src/com/shenrs/batchSms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_batch/src/com/shenrs/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/ProgramFiles/Java/jdk1.8.0_152/src.zip!/java/lang/Runnable.java" />
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="44" lean-forward="true" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/image/join.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/image/为什么要使用多线程.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/多线程几种状态.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -454,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="711">
           <caret line="87" column="1" lean-forward="true" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,14 +675,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
+=======
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_batch/src/com/shenrs/entity/UserEntity.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="640">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
         </state>
@@ -510,6 +705,17 @@
         <state relative-caret-position="46">
           <caret line="157" column="29" lean-forward="true" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
         </state>
+=======
+        <state relative-caret-position="420">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/ProgramFiles/Java/jdk1.8.0_152/src.zip!/java/lang/Runnable.java" />
+    <entry file="file://$PROJECT_DIR$/thread_demo01/image/join.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo01.java">
@@ -522,14 +728,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo02.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="420">
           <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
+=======
+        <state relative-caret-position="640">
+          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo03.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="260">
           <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding />
@@ -549,6 +761,10 @@
         <state relative-caret-position="460">
           <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
+=======
+        <state relative-caret-position="380">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
@@ -556,6 +772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="980">
           <caret line="87" column="1" lean-forward="false" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -587,10 +804,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/多线程几种状态.png">
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_batch/src/README.md" />
+    <entry file="file://$PROJECT_DIR$/thread_demo01/image/为什么要使用多线程.png">
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/多线程分批处理信息.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -599,6 +824,27 @@
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/守护线程与非守护线程.png">
       <provider selected="true" editor-type-id="images">
         <state />
+=======
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="43" column="39" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="37" column="27" lean-forward="true" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/异步与同步区别.png">
@@ -606,6 +852,7 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/thread_demo01/image/线程与进程区别.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -616,11 +863,19 @@
         <state relative-caret-position="752">
           <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo08.java" />
     <entry file="file://$PROJECT_DIR$/thread_demo01/src/com/shenrs/ThreadDemo07.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="100">
           <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
@@ -644,6 +899,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo02/image/多线程冲突产生.png">
+=======
+        <state relative-caret-position="320">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/ProgramFiles/Java/jdk1.8.0_152/jre/lib/rt.jar!/sun/misc/Unsafe.class" />
+    <entry file="jar://C:/ProgramFiles/Java/jdk1.8.0_152/src.zip!/java/util/concurrent/atomic/AtomicInteger.java" />
+    <entry file="file://$PROJECT_DIR$/thread_demo02/image/同步函数与静态函数区别.png">
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -703,30 +968,46 @@
     </entry>
     <entry file="jar://C:/ProgramFiles/Java/jdk1.8.0_152/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="152">
           <caret line="53" column="3" lean-forward="true" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
           <folding />
+=======
+        <state relative-caret-position="560">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadVolatile.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="300">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
+=======
+        <state relative-caret-position="60">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadDemo2.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-340">
           <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding />
+=======
+        <state relative-caret-position="1000">
+          <caret line="50" column="13" lean-forward="true" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadDemo3.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="600">
           <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
           <folding />
@@ -738,14 +1019,23 @@
         <state relative-caret-position="331">
           <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding />
+=======
+        <state relative-caret-position="120">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thread_demo02/src/com/shenrs/ThreadDemo.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="780">
           <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
           <folding />
+=======
+        <state relative-caret-position="320">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
@@ -770,29 +1060,69 @@
         <state relative-caret-position="785">
           <caret line="104" column="1" lean-forward="false" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#473#474#0" expanded="true" />
             <element signature="e#503#504#0" expanded="true" />
             <element signature="e#1295#1296#0" expanded="true" />
             <element signature="e#1325#1326#0" expanded="true" />
+=======
+            <element signature="imports" expanded="false" />
+            <element signature="e#278#279#0" expanded="false" />
+            <element signature="e#306#307#0" expanded="false" />
+            <element signature="e#530#539#0" expanded="false" />
+            <element signature="e#620#621#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/LockThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
           <caret line="131" column="1" lean-forward="true" selection-start-line="131" selection-start-column="1" selection-end-line="131" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="220">
+            <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="77" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/OutInputThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="95" column="29" lean-forward="true" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
+          <folding>
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/StopThreadDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/thread_demo03/src/com/shenrs/LockThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> c999c6e3fd4b65b294468a082ab66669a70d0119
         </state>
       </provider>
     </entry>
