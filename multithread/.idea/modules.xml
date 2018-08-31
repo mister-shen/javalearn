@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/thread_demo02/thread_demo02.iml" filepath="$PROJECT_DIR$/thread_demo02/thread_demo02.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_demo03/thread_demo03.iml" filepath="$PROJECT_DIR$/thread_demo03/thread_demo03.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread_demo04/thread_demo04.iml" filepath="$PROJECT_DIR$/thread_demo04/thread_demo04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread_demo05/thread_demo05.iml" filepath="$PROJECT_DIR$/thread_demo05/thread_demo05.iml" />
     </modules>
   </component>
 </project>
