@@ -144,7 +144,7 @@
     1）降低资源消耗
     2）提高响应速度
     3）提高线程的可管理行
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo03/image/%E6%80%BB%E7%BB%93.png "在这里输入图片标题")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/%E7%BA%BF%E7%A8%8B%E6%B1%A0.png "在这里输入图片标题")
     
     线程池的作用：为突然大量爆发的线程而设计的，通过有限的几个固定线程为大量的操作服务，减少了创建和销毁线程所需的时间，从而提高效率
 #### 2、线程池四种创建方式
@@ -167,5 +167,20 @@
         3）keepAliveTime： 表示线程没有任务执行时最多保持多久时间会终止。
 ---
         4）unit： 参数keepAliveTime的时间单位，有7种取值，在TimeUnit类中有7种静态属性
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86.png "在这里输入图片标题")
+
+#### 4、合理配置线程池
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/IO%E5%AF%86%E9%9B%86.png "在这里输入图片标题")
+#### 5、悲观锁与乐观锁
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/%E6%82%B2%E8%A7%82%E9%94%81%E4%B8%8E%E4%B9%90%E8%A7%82%E9%94%81.png "在这里输入图片标题")
+#### 6、重入锁
+    重入锁，也叫做递归锁，指的是同一线程 外层函数获得锁之后 ，内层递归函数仍然有获取该锁的代码，但不受影响。
+    在JAVA环境下 ReentrantLock 和synchronized 都是 可重入锁
+#### 7、读写锁
+        两个线程同时读一个资源没有任何问题，所以应该允许多个线程能在同时读取共享资源。但是如果有一个线程想去写这
+    些共享资源，就不应该再有其它线程对该资源进行读或写。
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/java%E8%AF%BB%E5%86%99%E9%94%81.png "在这里输入图片标题")
+#### 8、CAS无锁机制
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/multithread/thread_demo05/image/CAS%E6%97%A0%E9%94%81%E6%9C%BA%E5%88%B6.png "在这里输入图片标题")
 
 
