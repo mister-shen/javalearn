@@ -36,9 +36,9 @@
         （2）@Retention：被描述的注解在什么范围内有效（RetentionPolicy.RUNTIME 运行时）
         （3）@Documented
         （4）@Inherited
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "什么时注解")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E4%BB%80%E4%B9%88%E6%98%AF%E6%B3%A8%E8%A7%A3.png "什么是注解")
 #### 2、实现ORM框架映射
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "orm映射")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/orm%E6%98%A0%E5%B0%84.png "orm映射")
 
 #### 3、常用设计模式
     创建型模式，共五种：工厂方法模式、抽象工厂模式、单例模式、建造者模式、原型模式。
@@ -46,15 +46,15 @@
     行为型模式，共十一种：策略模式、模板方法模式、观察者模式、迭代子模式、责任链模式、命令模式、
         备忘录模式、状态模式、访问者模式、中介者模式、解释器模式。
     其实还有两类：并发型模式和线程池模式。
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "设计模式")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.png "设计模式")
     （1）单例模式
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "什么是单例")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E4%BB%80%E4%B9%88%E6%98%AF%E5%8D%95%E4%BE%8B.png "什么是单例")
     （2）工厂模式
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "工厂设计模式")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E5%B7%A5%E5%8E%82%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.png "工厂设计模式")
     （3）代理模式
         静态代理(静态定义代理类)
         动态代理(动态生成代理类)
         Jdk自带动态代理
         Cglib 、javaassist（字节码操作库）
-![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/json_demo/src/image/java%E7%9A%84%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.png "中介")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E4%B8%AD%E4%BB%8B.png "中介")
 
