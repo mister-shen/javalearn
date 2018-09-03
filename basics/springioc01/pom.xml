@@ -4,16 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.shenrs.json</groupId>
-    <artifactId>json_demo</artifactId>
+    <groupId>com.shenrs</groupId>
+    <artifactId>spring-ioc01</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- fastjson -->
+
+        <!-- commons-lang3 -->
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.49</version>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.8</version>
         </dependency>
 
         <!-- dom4j -->
@@ -23,5 +24,4 @@
             <version>2.1.1</version>
         </dependency>
     </dependencies>
-
 </project>

@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="json_demo" />
+        <module name="springioc01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="json_demo" target="1.5" />
+      <module name="springioc01" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
