@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/02_annotation_demo/02_annotation_demo.iml" filepath="$PROJECT_DIR$/02_annotation_demo/02_annotation_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_socket_demo/03_socket_demo.iml" filepath="$PROJECT_DIR$/03_socket_demo/03_socket_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/json_demo/json_demo.iml" filepath="$PROJECT_DIR$/json_demo/json_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springioc01/springioc01.iml" filepath="$PROJECT_DIR$/springioc01/springioc01.iml" />
     </modules>

@@ -57,4 +57,12 @@
         Jdk自带动态代理
         Cglib 、javaassist（字节码操作库）
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/02_annotation_demo/image/%E4%B8%AD%E4%BB%8B.png "中介")
-
+### 三、Socket网络通讯基础
+#### 1、网络通讯
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/网络通讯.png "网络通讯")
+#### 2、网络模型结构
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/网络模型结构.png "网络模型结构")
+#### 3、tcp协议与udp协议
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/tcp协议与udp协议.png "tcp协议与udp协议")
+#### 4、tcp协议三次握手
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/三次握手.png "三次握手")
