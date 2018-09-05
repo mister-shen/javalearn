@@ -1,0 +1,89 @@
+﻿package com.shenrs;
+
+import org.junit.Test;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+/**
+ * @author shenrs
+ * @Description
+ * @create 2018-09-05 11:27
+ **/
+public class Test003 {
+
+    /**
+     * 非直接缓冲区 读写操作
+     * @throws FileNotFoundException
+     */
+    @Test
+    public void test001() throws IOException {
+        long startTime = System.currentTimeMillis();
+
+        // 读入流
+        FileInputStream fis = new FileInputStream("F:\\BaiduNetdiskDownload\\java入门进阶主流框架学习到架构与电商项目实战课程\\0013-垃圾回收机制算法分析.zip");
+        // 写入流
+        FileOutputStream fos = new FileOutputStream("F:\\BaiduNetdiskDownload\\java入门进阶主流框架学习到架构与电商项目实战课程\\0013-垃圾回收机制算法分析2.zip");
+
+        //创建通道
+        FileChannel fisChannel = fis.getChannel();
+        FileChannel fosChannel = fos.getChannel();
+
+        // 分配指定大小缓存区
+        ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
+        while (fisChannel.read(byteBuffer) != -1){
+            // 开启读取模式
+            byteBuffer.flip();
+            // 将数据写入到通道中
+            fosChannel.write(byteBuffer);
+            byteBuffer.clear();
+        }
+
+        // 关闭通道
+        fisChannel.close();
+        fosChannel.close();
+        // 关闭流
+        fis.close();
+        fos.close();
+
+        long endTime = System.currentTimeMillis();
+        System.out.println("非直接缓存区运行时间：" + (endTime - startTime));
+    }
+
+    /**
+     * 直接缓冲区 读写操作
+     */
+    @Test
+    public void test002() throws IOException {
+        long startTime = System.currentTimeMillis();
+        // 创建管道
+        FileChannel inFileChannel = FileChannel.open(Paths.get("F:\\BaiduNetdiskDownload\\java入门进阶主流框架学习到架构与电商项目实战课程\\0013-垃圾回收机制算法分析.zip"), StandardOpenOption.READ);
+        FileChannel outFileChannel = FileChannel.open(Paths.get("F:\\BaiduNetdiskDownload\\java入门进阶主流框架学习到架构与电商项目实战课程\\0013-垃圾回收机制算法分析3.zip"), StandardOpenOption.READ,
+                StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+        // 定义映射文件
+        MappedByteBuffer inMappedByte = inFileChannel.map(FileChannel.MapMode.READ_ONLY, 0,
+                inFileChannel.size());
+        MappedByteBuffer outMappedByte = outFileChannel.map(FileChannel.MapMode.READ_WRITE, 0,
+                inFileChannel.size());
+
+        //直接对缓冲区操作
+        byte[] bytes = new byte[inMappedByte.limit()];
+        inMappedByte.get(bytes);
+        outMappedByte.put(bytes);
+
+        //关闭管道
+        inFileChannel.close();
+        outFileChannel.close();
+        long endTime = System.currentTimeMillis();
+        System.out.println("直接缓存区运行时间：" + (endTime - startTime));
+
+
+    }
+}

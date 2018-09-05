@@ -66,3 +66,41 @@
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/tcp协议与udp协议.png "tcp协议与udp协议")
 #### 4、tcp协议三次握手
 ![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/03_socket_demo/image/三次握手.png "三次握手")
+### 四、NIO编程基础
+#### 1、什么是NIO
+    jdk1.4 及以上版本里提供的新api(New IO) ，为所有的原始类型(boolean类型除外)提供缓存支持的数据容器，使用它可以提供非阻塞式的高伸缩性网络。
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/NIO.png "NIO")
+#### 2、IO与NIO区别
+| IO | NIO | 
+| - | - | 
+| 面向流 | 面向缓冲|
+| 阻塞IO | 非阻塞IO |
+| 无 | 选择器 |
+#### 3、Buffer的数据存取
+    常用的Buffer子类：ByteBuffer（常用）、CharBuffer、ShortBuffer、IntBuffer、LongBuffer、FloatBuffer、DoubleBuffer
+---
+    （1）buffer的概述
+        1）容量（capacity）：表示Buffer最大数据容量，缓冲区容量不能为负，并且建立后不能修改。
+        2）限制（limit）：第一个不应该读取或者写入的数据的索引，即位于limit后的数据不可以读写。缓冲区的限制不能为负，
+           并且不能大于其容量（capacity）。
+        3）位置（position）：下一个要读取或写入的数据的索引。缓冲区的位置不能为负，并且不能大于其限制（limit）。
+        4）标记（mark）与重置（reset）：标记是一个索引，通过Buffer中的mark()方法指定Buffer中一个特定的position，
+           之后可以通过调用reset()方法恢复到这个position。
+---
+    （2）直接缓冲区与非直接缓冲区别
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/非直接缓冲区.png "非直接缓冲区")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/直接缓冲区.png "直接缓冲区")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/缓冲区.png "缓冲区")
+---
+    （3）分散读取与聚集写入
+        分散读取(scattering Reads)：将通道中的数据分散到多个缓冲区中
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/分散读取.png "分散读取")
+---
+        聚集写入(gathering Writes)：将多个缓冲区的数据聚集到通道中
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/04_nio_demo/image/聚集写入.png "聚集写入")
+---
+    （4）字符集 Charset
+        编码：字符串->字节数组
+        解码：字节数组 -> 字符串
+	
+	

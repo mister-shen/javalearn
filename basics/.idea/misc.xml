@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/springioc01/pom.xml" />
         <option value="$PROJECT_DIR$/02_annotation_demo/pom.xml" />
         <option value="$PROJECT_DIR$/03_socket_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/04_nio_demo/pom.xml" />
       </list>
     </option>
   </component>
