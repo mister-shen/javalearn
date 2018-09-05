@@ -9,16 +9,18 @@
         <module name="02_annotation_demo" />
         <module name="03_socket_demo" />
         <module name="04_nio_demo" />
+        <module name="05_netty_demo" />
         <module name="json_demo" />
         <module name="springioc01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="02_annotation_demo" target="1.8" />
-      <module name="03_socket_demo" target="1.8" />
-      <module name="04_nio_demo" target="1.8" />
-      <module name="json_demo" target="1.8" />
-      <module name="springioc01" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="02_annotation_demo" target="1.6" />
+      <module name="03_socket_demo" target="1.5" />
+      <module name="04_nio_demo" target="1.5" />
+      <module name="05_netty_demo" target="1.5" />
+      <module name="json_demo" target="1.5" />
+      <module name="springioc01" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
