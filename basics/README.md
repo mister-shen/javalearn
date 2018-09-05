@@ -102,5 +102,41 @@
     （4）字符集 Charset
         编码：字符串->字节数组
         解码：字节数组 -> 字符串
-	
-	
+### 五、NIO高级编程与Netty入门
+#### 1、BIO与NIO
+    IO(BIO)和NIO区别:其本质就是阻塞和非阻塞的区别 
+    阻塞概念:应用程序在获取网络数据的时候,如果网络传输数据很慢，就会一直等待,直到传输完毕为止。
+    非阻塞概念:应用程序直接可以获取已经准备就绪好的数据,无需等待。
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/05_entty_demo/image/NIO.png "NIO")
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/05_entty_demo/image/非阻塞与阻塞IO.png "非阻塞与阻塞IO")
+
+#### 2、什么是阻塞
+    阻塞概念:应用程序在获取网络数据的时候,如果网络传输很慢,那么程序就一直等着,直接到传输完毕。
+#### 3、什么是非阻塞
+    应用程序直接可以获取已经准备好的数据,无需等待.
+    IO为同步阻塞形式,NIO为同步非阻塞形式。NIO没有实现异步,在JDK1.7之后，升级了NIO库包
+    ,支持异步费阻塞通讯模型NIO2.0(AIO)
+#### 4、NIO非阻塞代码
+#### 5、选择KEY 
+    1、SelectionKey.OP_CONNECT
+    2、SelectionKey.OP_ACCEPT
+    3、SelectionKey.OP_READ
+    4、SelectionKey.OP_WRITE
+---
+#### 6、什么是Netty
+     Netty 是一个基于 JAVA NIO 类库的异步通信框架，
+     它的架构特点是：异步非阻塞、基于事件驱动、高性能、高可靠性和高可定制性。
+![输入图片说明](https://github.com/mister-shen/javalearn/blob/master/basics/05_entty_demo/image/netty.png "netty")
+
+#### 6、Netty应用场景
+    1.分布式开源框架中dubbo、Zookeeper，RocketMQ底层rpc通讯使用就是netty。
+    2.游戏开发中，底层使用netty通讯。
+#### 7、为什么选择netty
+    1)NIO的类库和API繁杂，使用麻烦，你需要熟练掌握Selector、ServerSocketChannel、SocketChannel、ByteBuffer等；
+    2)需要具备其它的额外技能做铺垫，例如熟悉Java多线程编程，因为NIO编程涉及到Reactor模式，你必须对多线程和网路
+      编程非常熟悉，才能编写出高质量的NIO程序；
+    3)可靠性能力补齐，工作量和难度都非常大。例如客户端面临断连重连、网络闪断、半包读写、失败缓存、网络拥塞和异
+      常码流的处理等等，NIO编程的特点是功能开发相对容易，但是可靠性能力补齐工作量和难度都非常大；
+    4)JDK NIO的BUG，例如臭名昭著的epoll bug，它会导致Selector空轮询，最终导致CPU 100%。官方声称在JDK1.6版本的
+      update18修复了该问题，但是直到JDK1.7版本该问题仍旧存在，只不过该bug发生概率降低了一些而已，它并没有被根本解决。
+#### 8、netty服务端代码与客户端代码
