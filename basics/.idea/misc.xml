@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/03_socket_demo/pom.xml" />
         <option value="$PROJECT_DIR$/04_nio_demo/pom.xml" />
         <option value="$PROJECT_DIR$/05_netty_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/06_netty_demo/pom.xml" />
       </list>
     </option>
   </component>
