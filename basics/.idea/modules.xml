@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/04_nio_demo/04_nio_demo.iml" filepath="$PROJECT_DIR$/04_nio_demo/04_nio_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_netty_demo/05_netty_demo.iml" filepath="$PROJECT_DIR$/05_netty_demo/05_netty_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_netty_demo/06_netty_demo.iml" filepath="$PROJECT_DIR$/06_netty_demo/06_netty_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_jvm_demo/07_jvm_demo.iml" filepath="$PROJECT_DIR$/07_jvm_demo/07_jvm_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/json_demo/json_demo.iml" filepath="$PROJECT_DIR$/json_demo/json_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springioc01/springioc01.iml" filepath="$PROJECT_DIR$/springioc01/springioc01.iml" />
     </modules>
