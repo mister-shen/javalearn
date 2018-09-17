@@ -576,3 +576,244 @@
 ![重定向实现原理](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/重定向实现原理.png "重定向实现原理")
 #### 3、防盗链
 ![防盗链](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/防盗链.png "防盗链")
+
+### 十二、表单重复提交&防止模拟请求&跨域解决方案
+#### 1、http与https的区别
+![http协议抓包](https://github.com/mister-shen/javalearn/blob/master/basics/12_servletweb_demo/image/http协议抓包.png "http协议抓包")
+#### 2、java使用HttpClient发送http请求（get与post）
+#### 3、长连接与短连接
+![长连接与短连接](https://github.com/mister-shen/javalearn/blob/master/basics/12_servletweb_demo/image/长连接与短连接.png "长连接与短连接")
+---
+#### 4、跨域解决方案
+![使用httpclient转发](https://github.com/mister-shen/javalearn/blob/master/basics/12_servletweb_demo/image/使用httpclient转发.png "使用httpclient转发")
+1.  使用后台response添加header
+    ```response.setHeader("Access-Control-Allow-Origin", "*");``` 支持所有网站
+2. 使用JSONP
+    前端代码：
+    ```
+    $.ajax({
+            type : "POST",
+            async : false,
+            url : "http://a.a.com/a/FromUserServlet?userName=张三",
+            //数据类型为jsonp  
+            dataType : "jsonp",
+            //服务端用于接收callback调用的function名的参数
+            jsonp : "jsonpCallback",  
+            success : function(data) {
+                alert(data.result);
+            },
+            error : function() {
+                alert('fail');
+            }
+    });
+    ```
+    后端代码：
+    ```
+        // 客户端请求参数
+        String jsonpCallback = req.getParameter("jsonpCallback");
+        // 返回jsonp格式数据
+        out.println(jsonpCallback + "(" + resultJSON.toJSONString() + ")");
+    ```
+    jsop原理：
+        JSONP模式来请求数据的时候服务端返回的是一段可执行的 JavaScript代码。
+        原理是动态加载 script的src，只能把参数通过 url的方式传递,所以jsonp的 type类型只能是 get。
+        客户端发送一个请求，规定一个可执行的函数名，服务器端接受了这个 backfunc函数名，然后把数据通过实参的形式发送出去
+
+
+3. 后台Http请求转发
+      使用HttpClinet转发进行转发
+      ``` 
+      protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        
+            // 创建默认连接
+            CloseableHttpClient httpClient = HttpClients.createDefault();
+            // 创建get请求
+            HttpGet httpGet = new HttpGet("http://a.a.com/a/FromServlet?userName=" + req.getParameter("userName"));
+            CloseableHttpResponse response = httpClient.execute(httpGet);
+            int code = response.getStatusLine().getStatusCode();
+            // 获取状态
+            System.out.println("http请求结果:" + code);
+            if (code == 200) {
+                String result = EntityUtils.toString(response.getEntity());
+                System.out.println(result);
+                resp.getWriter().print(result);
+                response.close();
+                httpClient.close();
+                // 将string转换html框架
+    
+            }
+        
+      }
+      ```
+4. 使用接口网关
+    * 使用nginx转发
+    * 使用SpringCloud网关
+
+#### 5、表单重复提交解决方案
+    转发至jsp代码
+```
+@WebServlet("/ForwardServlet")
+public class ForwardServlet extends HttpServlet {
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getSession().setAttribute("sesionToken", TokenUtils.getToken());
+        req.getRequestDispatcher("form.jsp").forward(req, resp);
+    }
+}
+```
+    转发jsp页面
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Form表单</title>
+
+</head>
+
+<body>
+    <form action="${pageContext.request.contextPath}/DoFormServlet"
+        method="post" onsubmit="return dosubmit()">
+        <input type="hidden" name="token" value="${sesionToken}"> 用户名：<input type="text"
+            name="userName"> <input type="submit" value="提交" id="submit">
+    </form>
+</body>
+</html>
+```
+    保存数据后台代码
+```
+@WebServlet("/DoFormServlet")
+public class DoFormServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+        boolean flag = isFlag(req);
+        if (!flag) {
+            resp.getWriter().write("已经提交...");
+            System.out.println("数据已经提交了..");
+            return;
+        }
+        String userName = req.getParameter("userName");
+        try {
+            Thread.sleep(300);
+        } catch (Exception e) {
+            // TODO: handle exception
+        }
+        System.out.println("往数据库插入数据...." + userName);
+        resp.getWriter().write("success");
+    }
+
+    public boolean isFlag(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        String sesionToken = (String) session.getAttribute("sesionToken");
+        String token = request.getParameter("token");
+        if (!(token.equals(sesionToken))) {
+            return false;
+        }
+        session.removeAttribute("sesionToken");
+        return true;
+    }
+}
+```
+    更好的实现方式：https://blog.csdn.net/zhang289202241/article/details/70801640
+
+#### 5、如何防止接口被模拟 使用验证码
+
+#### 6、使用Fileter防止XSS攻击
+    在web.xml加一个filter
+
+```
+<filter>  
+   <filter-name>XssEscape</filter-name>  
+   <filter-class>cn.pconline.morden.filter.XssFilter</filter-class>  
+</filter>  
+<filter-mapping>  
+   <filter-name>XssEscape</filter-name>  
+   <url-pattern>/*</url-pattern>  
+   <dispatcher>REQUEST</dispatcher>  
+</filter-mapping> 
+```
+    XssFilter 的实现方式是实现servlet的Filter接口
+
+```
+package cn.pconline.morden.filter;  
+  
+import java.io.IOException;  
+  
+import javax.servlet.Filter;  
+import javax.servlet.FilterChain;  
+import javax.servlet.FilterConfig;  
+import javax.servlet.ServletException;  
+import javax.servlet.ServletRequest;  
+import javax.servlet.ServletResponse;  
+import javax.servlet.http.HttpServletRequest;  
+  
+public class XssFilter implements Filter {  
+      
+    @Override  
+    public void init(FilterConfig filterConfig) throws ServletException {  
+    }  
+  
+    @Override  
+    public void doFilter(ServletRequest request, ServletResponse response,  
+            FilterChain chain) throws IOException, ServletException {  
+        chain.doFilter(new XssHttpServletRequestWrapper((HttpServletRequest) request), response);  
+    }  
+  
+    @Override  
+    public void destroy() {  
+    }  
+}  
+```
+     关键是XssHttpServletRequestWrapper的实现方式，
+     继承servlet的HttpServletRequestWrapper，并重写相应的几个有可能带xss攻击的方法，如：
+
+```
+package cn.pconline.morden.filter;  
+  
+import javax.servlet.http.HttpServletRequest;  
+import javax.servlet.http.HttpServletRequestWrapper;  
+  
+import org.apache.commons.lang3.StringEscapeUtils;  
+  
+public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {  
+  
+    public XssHttpServletRequestWrapper(HttpServletRequest request) {  
+        super(request);  
+    }  
+  
+    @Override  
+    public String getHeader(String name) {  
+        return StringEscapeUtils.escapeHtml4(super.getHeader(name));  
+    }  
+  
+    @Override  
+    public String getQueryString() {  
+        return StringEscapeUtils.escapeHtml4(super.getQueryString());  
+    }  
+  
+    @Override  
+    public String getParameter(String name) {  
+        return StringEscapeUtils.escapeHtml4(super.getParameter(name));  
+    }  
+  
+    @Override  
+    public String[] getParameterValues(String name) {  
+        String[] values = super.getParameterValues(name);  
+        if(values != null) {  
+            int length = values.length;  
+            String[] escapseValues = new String[length];  
+            for(int i = 0; i < length; i++){  
+                escapseValues[i] = StringEscapeUtils.escapeHtml4(values[i]);  
+            }  
+            return escapseValues;  
+        }  
+        return super.getParameterValues(name);  
+    }  
+      
+}  
+```
+
+
+    

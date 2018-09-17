@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="10_servletweb_demo" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.49" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.3.2" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/10_servletweb_demo/target/10_servletweb_demo-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
