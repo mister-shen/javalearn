@@ -11,6 +11,8 @@
         <module name="04_nio_demo" />
         <module name="05_netty_demo" />
         <module name="06_netty_demo" />
+        <module name="10_servletweb_demo" />
+        <module name="11_servletweb_demo" />
         <module name="json_demo" />
         <module name="springioc01" />
       </profile>
@@ -21,6 +23,9 @@
       <module name="04_nio_demo" target="1.5" />
       <module name="05_netty_demo" target="1.5" />
       <module name="06_netty_demo" target="1.5" />
+      <module name="09_servletweb_demo" target="1.8" />
+      <module name="10_servletweb_demo" target="1.5" />
+      <module name="11_servletweb_demo" target="1.5" />
       <module name="json_demo" target="1.5" />
       <module name="springioc01" target="1.5" />
     </bytecodeTargetLevel>

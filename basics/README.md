@@ -415,6 +415,7 @@
             •	如何选择应该依赖应用程序对象生命周期的分布情况：如果应用存在大量的临时对象，应该选择更大的年轻代；如果存在相对较多的持久对象，年老代应该适当增大。但很多应用都没有这样明显的特性，在抉择时应该根据以下两点：（A）本着Full GC尽量少的原则，让年老代尽量缓存常用对象，JVM的默认比例1：2也是这个道理 （B）通过观察应用一段时间，看其他在峰值时年老代会占多少内存，在不影响Full GC的前提下，根据实际情况加大年轻代，比如可以把比例控制在1：1。但应该给年老代至少预留1/3的增长空间
 
 ### 八、垃圾回收机制算法分析
+![什么是垃圾回收](https://github.com/mister-shen/javalearn/blob/master/basics/08_垃圾回收机制算法分析/图片/什么是垃圾回收.png "什么是垃圾回收")
 #### 1、finalize作用
 	finalize()方法是在垃圾收集器删除对象之前对这个对象调用的。它是在Object类中定义的，因此所有的类都继承了它。
 #### 2、内存泄露
@@ -425,6 +426,7 @@
         （2）当一个监听器在使用的时候被注册，但不再使用之后却未被反注册。
         （3）成员变量引用其他对象，初始化的时候需要置空。
 #### 3、垃圾回收机制算法
+![垃圾收集算法](https://github.com/mister-shen/javalearn/blob/master/basics/08_垃圾回收机制算法分析/图片/垃圾收集算法.png "垃圾收集算法")
 	(1)引用计数法
 
     	概述：给对象中添加一个引用计数器，每当有一个地方引用它时，计数器值就加1；
@@ -448,6 +450,8 @@
 		缺点：可使用的内存降为原来一半。
 ---
 		用处：新生代的 s0 s1 垃圾回收
+![复制算法](https://github.com/mister-shen/javalearn/blob/master/basics/08_垃圾回收机制算法分析/图片/复制算法.png "复制算法")
+
 ---
 	(3)标记清除算法
         概述：根据特定的算法（如：引用计数算法，可达性分析算法等）标出内存中哪些对象可以回收，哪些对象还要继续用。
@@ -458,6 +462,7 @@
 ---
 	(4)标记-压缩算法
         概述：标记压缩法在标记清除基础之上做了优化，把存活的对象压缩到内存一端,而后进行垃圾清理。
+![标记压缩与标记整理](https://github.com/mister-shen/javalearn/blob/master/basics/08_垃圾回收机制算法分析/图片/标记压缩与标记整理.png "标记压缩与标记整理")
 ---
 		用处：老年代垃圾回收
 ---
@@ -528,3 +533,46 @@
         使用-XX:ParallelGCThreads
 #### 6、Tomcat配置调优测试
 	Jmeter压力测试工具
+![压力测试工具](https://github.com/mister-shen/javalearn/blob/master/basics/08_垃圾回收机制算法分析/图片/压力测试工具.png "压力测试工具")
+
+
+### 九、Maven项目管理工具
+![mvn常用命令](https://github.com/mister-shen/javalearn/blob/master/basics/09_Maven项目管理工具/图片/maven常用命令.png "mvn常用命令")
+
+### 十、DNS解析过程&&外网映射工具&Cookie与Session实现原理Servlet源码分析
+#### 1、DNS解析过程
+![dns解析过程](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/dns解析过程.png "dns解析过程")
+---
+#### 2、内网与外网区别
+![内网与外网区别](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/内网与外网区别.png "内网与外网区别")
+---
+#### 3、Servlet核心内容
+![servlet声明周期](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/servlet声明周期.png "servlet声明周期")
+---
+![servlet执行流程](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/servlet执行流程.png "servlet执行流程")
+---
+![servlet线程是否安全](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/servlet线程是否安全.png "servlet线程是否安全")
+---
+#### 4、cookie实现原理
+    1）Cookie只能存字符串类型。不能保存对象
+    2）只能存非中文。
+    3）1个Cookie的容量不超过4KB。
+    如果存中文，需要转码解码；浏览器一般只允许存放300个Cookie，每个站点最多存放20个Cookie，每个Cookie的大小限制为4KB。
+![cookie实现原理](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/cookie实现原理.png "cookie实现原理")
+---
+#### 5、session实现原理
+    特点：会话数据保存在服务器端。（内存中）
+![session实现原理](https://github.com/mister-shen/javalearn/blob/master/basics/10_servletweb_demo/image/session实现原理.png "session实现原理")
+---
+
+### 十一、深入理解Http协议 
+![客户端与服务器](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/客户端与服务器.png "客户端与服务器")
+![http协议组成部分](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/http协议组成部分.png "http协议组成部分")
+
+#### 1、Http请求
+![http请求](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/http请求.png "http请求")
+![http请求分析](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/http请求分析.png "http请求分析")
+#### 2、重定向实现原理
+![重定向实现原理](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/重定向实现原理.png "重定向实现原理")
+#### 3、防盗链
+![防盗链](https://github.com/mister-shen/javalearn/blob/master/basics/11_servletweb_demo/image/防盗链.png "防盗链")
