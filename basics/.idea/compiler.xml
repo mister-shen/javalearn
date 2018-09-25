@@ -11,6 +11,7 @@
         <module name="04_nio_demo" />
         <module name="05_netty_demo" />
         <module name="06_netty_demo" />
+        <module name="06_netty_long_conn_heartbeat_detection" />
         <module name="10_servletweb_demo" />
         <module name="11_servletweb_demo" />
         <module name="12_servletweb_demo" />
@@ -24,6 +25,7 @@
       <module name="04_nio_demo" target="1.5" />
       <module name="05_netty_demo" target="1.5" />
       <module name="06_netty_demo" target="1.5" />
+      <module name="06_netty_long_conn_heartbeat_detection" target="1.5" />
       <module name="10_servletweb_demo" target="1.5" />
       <module name="11_servletweb_demo" target="1.5" />
       <module name="12_servletweb_demo" target="1.5" />
