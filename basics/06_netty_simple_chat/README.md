@@ -1,0 +1,3 @@
+##Netty 实现聊天功能
+[Netty 4.x 用户指南](https://waylau.com/netty-4-user-guide/Getting%20Started/Writing%20a%20Discard%20Server.html?q=)https://waylau.com/netty-4-user-guide/Getting%20Started/Writing%20a%20Discard%20Server.html?q=
+[Netty 实战(精髓)](https://waylau.com/essential-netty-in-action/GETTING%20STARTED/Asynchronous%20and%20Event%20Driven.html)https://waylau.com/essential-netty-in-action/GETTING%20STARTED/Asynchronous%20and%20Event%20Driven.html

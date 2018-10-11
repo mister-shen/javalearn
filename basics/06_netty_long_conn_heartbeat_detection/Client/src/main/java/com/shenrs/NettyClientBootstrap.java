@@ -62,7 +62,7 @@ public class NettyClientBootstrap {
 
     public static void main(String[] args) throws InterruptedException {
         Constants.setClientId("001");
-        NettyClientBootstrap bootstrap = new NettyClientBootstrap(9999, "localhost");
+        NettyClientBootstrap bootstrap = new NettyClientBootstrap(8080, "localhost");
 
         LoginMsg loginMsg = new LoginMsg();
         loginMsg.setPassword("yao");
@@ -76,5 +76,7 @@ public class NettyClientBootstrap {
             askMsg.setParams(askParams);
             bootstrap.socketChannel.writeAndFlush(askMsg);
         }
+
+
     }
 }

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_netty_demo/05_netty_demo.iml" filepath="$PROJECT_DIR$/05_netty_demo/05_netty_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_netty_demo/06_netty_demo.iml" filepath="$PROJECT_DIR$/06_netty_demo/06_netty_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_netty_long_conn_heartbeat_detection/06_netty_long_conn_heartbeat_detection.iml" filepath="$PROJECT_DIR$/06_netty_long_conn_heartbeat_detection/06_netty_long_conn_heartbeat_detection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_netty_simple_chat/06_netty_simple_chat.iml" filepath="$PROJECT_DIR$/06_netty_simple_chat/06_netty_simple_chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_jvm_demo/07_jvm_demo.iml" filepath="$PROJECT_DIR$/07_jvm_demo/07_jvm_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/10_servletweb_demo/10_servletweb_demo.iml" filepath="$PROJECT_DIR$/10_servletweb_demo/10_servletweb_demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/11_servletweb_demo/11_servletweb_demo.iml" filepath="$PROJECT_DIR$/11_servletweb_demo/11_servletweb_demo.iml" />

@@ -11,11 +11,14 @@
         <module name="04_nio_demo" />
         <module name="05_netty_demo" />
         <module name="06_netty_demo" />
-        <module name="06_netty_long_conn_heartbeat_detection" />
+        <module name="06_netty_simple_chat" />
         <module name="10_servletweb_demo" />
         <module name="11_servletweb_demo" />
         <module name="12_servletweb_demo" />
+        <module name="Client" />
         <module name="json_demo" />
+        <module name="Server" />
+        <module name="Share" />
         <module name="springioc01" />
       </profile>
     </annotationProcessing>
@@ -26,10 +29,14 @@
       <module name="05_netty_demo" target="1.5" />
       <module name="06_netty_demo" target="1.5" />
       <module name="06_netty_long_conn_heartbeat_detection" target="1.5" />
+      <module name="06_netty_simple_chat" target="1.5" />
       <module name="10_servletweb_demo" target="1.5" />
       <module name="11_servletweb_demo" target="1.5" />
       <module name="12_servletweb_demo" target="1.5" />
+      <module name="Client" target="1.5" />
       <module name="json_demo" target="1.5" />
+      <module name="Server" target="1.5" />
+      <module name="Share" target="1.5" />
       <module name="springioc01" target="1.5" />
     </bytecodeTargetLevel>
   </component>
