@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mapper.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itmayiedu.mapper.UserMapper">
+    <select id="getUser" parameterType="int" resultType="com.shenrs.mybatis.model.User">
+        SELECT *
+        FROM users where id =#{id}
+    </select>
+
+    <insert id="addUser" parameterType="com.shenrs.mybatis.model.User" >
+
+        INSERT INTO users(NAME, age) VALUES(#{name}, #{age});
+    </insert>
+</mapper>
