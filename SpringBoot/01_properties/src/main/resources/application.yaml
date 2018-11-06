@@ -1,0 +1,23 @@
+
+
+spring:
+  profiles:
+    active: prod
+
+server:
+  servlet:
+    context-path: /demo
+
+# 开启SpringBoot的debug
+debug: true
+---
+server:
+  port: 8080
+spring:
+  profiles: dev
+
+---
+server:
+  port: 80
+spring:
+  profiles: prod
