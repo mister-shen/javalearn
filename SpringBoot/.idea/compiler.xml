@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01_helloworld" />
-        <module name="01_properties" />
         <module name="02_spring-boot-logging" />
         <module name="03_web-restfulcrud" />
       </profile>
