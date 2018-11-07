@@ -16,7 +16,7 @@
       <module name="01_helloworld" target="1.8" />
       <module name="01_properties" target="1.8" />
       <module name="02_spring-boot-logging" target="1.8" />
-      <module name="03_web-restfulcrud" target="1.8" />
+      <module name="03_web-restfulcrud" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
