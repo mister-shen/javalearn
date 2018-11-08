@@ -1,11 +1,16 @@
 package com.shenrs.config;
 
-import com.shenrs.component.LoginHandlerInterceptor;
+import com.shenrs.component.MyErrorAttributes;
 import com.shenrs.component.MylocalResolver;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
+import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
-import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * @EnableWebMvc:全面接管SpringMVC,所有的自动配置都失效了，需要自己配置。
@@ -16,18 +21,38 @@ import org.springframework.web.servlet.config.annotation.*;
 //@EnableWebMvc
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
+
+
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         // 浏览器发送/shenrs 请求来到success.html页面
         registry.addViewController("/shenrs").setViewName("success");
-
     }
+
+    @Bean
+    public WebServerFactoryCustomizer<ConfigurableWebServerFactory> webServerFactoryCustomizer(){
+        return new WebServerFactoryCustomizer<ConfigurableWebServerFactory>() {
+            /**
+             * 定制嵌入式的servlet容器相关的定制
+             * @param factory
+             */
+            @Override
+            public void customize(ConfigurableWebServerFactory factory) {
+                factory.setPort(8081);
+            }
+        };
+    }
+
 
     // 所有的WebMvcConfigurer组件都会一起起作用
     @Bean // 将组件注册在容器
     public WebMvcConfigurer webMvcConfigurer(){
-        WebMvcConfigurer webMvcConfigurer = new WebMvcConfigurer(){
+        return new WebMvcConfigurer(){
 
+            /**
+             * 添加视图映射
+             * @param registry
+             */
             @Override
             public void addViewControllers(ViewControllerRegistry registry) {
                 registry.addViewController("/").setViewName("login");
@@ -52,7 +77,7 @@ public class MyMvcConfig implements WebMvcConfigurer {
 */
             }
         };
-        return webMvcConfigurer;
+
     }
 
     /**
@@ -64,4 +89,14 @@ public class MyMvcConfig implements WebMvcConfigurer {
         return new MylocalResolver();
     }
 
+    /**
+     * 自定义异常返回参数
+     * 给容器中加入我们自己定义的ErrorAttributes
+     * @return
+     */
+    @Bean
+    public DefaultErrorAttributes defaultErrorAttributes(){
+        return new MyErrorAttributes();
+    }
 }
+

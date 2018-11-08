@@ -28,7 +28,18 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<!--<exclusions>
+				<exclusion>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+					<groupId>org.springframework.boot</groupId>
+				</exclusion>
+			</exclusions>-->
 		</dependency>
+		<!--引入其他的Servlet容器-->
+		<!--<dependency>
+			<artifactId>spring-boot-starter-jetty</artifactId>
+			<groupId>org.springframework.boot</groupId>
+		</dependency>-->
 		<!--引入jquery-->
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
