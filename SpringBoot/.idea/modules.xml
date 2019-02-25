@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/02_spring-boot-logging/02_spring-boot-logging.iml" filepath="$PROJECT_DIR$/02_spring-boot-logging/02_spring-boot-logging.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_web-restfulcrud/03_web-restfulcrud.iml" filepath="$PROJECT_DIR$/03_web-restfulcrud/03_web-restfulcrud.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_web_jsp/04_web_jsp.iml" filepath="$PROJECT_DIR$/04_web_jsp/04_web_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_data_jdbc/05_data_jdbc.iml" filepath="$PROJECT_DIR$/05_data_jdbc/05_data_jdbc.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,7 @@
         <module name="02_spring-boot-logging" />
         <module name="03_web-restfulcrud" />
         <module name="04_web_jsp" />
+        <module name="05_data_jdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="03_web-restfulcrud" target="1.6" />
       <module name="04_web-jsp" target="1.8" />
       <module name="04_web_jsp" target="1.8" />
+      <module name="05_data_jdbc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
