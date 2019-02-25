@@ -31,10 +31,10 @@ public class MyServerConfig {
      * 注册Servlet  与注解法使用
      * @return
      */
-    /*@Bean
+    @Bean
     public ServletRegistrationBean<MyServlet> myServlet(){
         return new ServletRegistrationBean<MyServlet>(new MyServlet(), "/myServlet");
-    }*/
+    }
 
     /**
      * 注册Filter  与注解法使用

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/04_web-jsp" />
+    <file type="web" url="file://$PROJECT_DIR$/04_web_jsp" />
+  </component>
   <component name="Kotlin2JsCompilerArguments">
     <option name="sourceMapPrefix" value="" />
     <option name="sourceMapEmbedSources" value="inlining" />
@@ -11,6 +15,7 @@
         <option value="$PROJECT_DIR$/01_properties/pom.xml" />
         <option value="$PROJECT_DIR$/02_spring-boot-logging/pom.xml" />
         <option value="$PROJECT_DIR$/03_web-restfulcrud/pom.xml" />
+        <option value="$PROJECT_DIR$/04_web_jsp/pom.xml" />
       </list>
     </option>
   </component>
