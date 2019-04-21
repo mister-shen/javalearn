@@ -11,6 +11,14 @@
         <module name="03_web-restfulcrud" />
         <module name="04_web_jsp" />
         <module name="05_data_jdbc" />
+        <module name="06_data_mybatis" />
+        <module name="07_data_jpa" />
+        <module name="08_spring_boot" />
+        <module name="09_spring_boot_starter" />
+        <module name="09_spring_boot_starter_autoconfigurer" />
+        <module name="09_spring_boot_starter_test" />
+        <module name="10_spring-boot-cache" />
+        <module name="11_spring_boot_amqp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +30,14 @@
       <module name="04_web-jsp" target="1.8" />
       <module name="04_web_jsp" target="1.8" />
       <module name="05_data_jdbc" target="1.8" />
+      <module name="06_data_mybatis" target="1.8" />
+      <module name="07_data_jpa" target="1.8" />
+      <module name="08_spring_boot" target="1.8" />
+      <module name="09_spring_boot_starter" target="1.5" />
+      <module name="09_spring_boot_starter_autoconfigurer" target="1.8" />
+      <module name="09_spring_boot_starter_test" target="1.8" />
+      <module name="10_spring-boot-cache" target="1.8" />
+      <module name="11_spring_boot_amqp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

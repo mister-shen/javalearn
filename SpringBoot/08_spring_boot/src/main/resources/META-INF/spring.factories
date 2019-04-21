@@ -1,0 +1,7 @@
+# Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.shenrs.listenter.HelloApplicationContextInitializer
+
+# Application Listeners
+org.springframework.boot.SpringApplicationRunListener=\
+com.shenrs.listenter.HelloSpringApplicationRunListener

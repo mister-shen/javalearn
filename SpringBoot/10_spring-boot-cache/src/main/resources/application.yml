@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://47.104.188.96:3308/spring_cache
+  redis:
+    host: 47.104.188.96
+    # \u7A0B\u5E8F\u542F\u52A8\u521B\u5EFA\u8868
+    #initializationMode: ALWAYS
+    #schema:
+    #  - classpath:sqls/springboot_cache.sql
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # \u5F00\u542F\u9A7C\u5CF0\u547D\u540D\u6CD5
+logging:
+  level:
+    com:
+      shenrs:
+        mapper: debug
+#debug: true

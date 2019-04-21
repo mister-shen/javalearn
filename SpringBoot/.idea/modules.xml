@@ -7,6 +7,14 @@
       <module fileurl="file://$PROJECT_DIR$/03_web-restfulcrud/03_web-restfulcrud.iml" filepath="$PROJECT_DIR$/03_web-restfulcrud/03_web-restfulcrud.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_web_jsp/04_web_jsp.iml" filepath="$PROJECT_DIR$/04_web_jsp/04_web_jsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_data_jdbc/05_data_jdbc.iml" filepath="$PROJECT_DIR$/05_data_jdbc/05_data_jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_data_mybatis/06_data_mybatis.iml" filepath="$PROJECT_DIR$/06_data_mybatis/06_data_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_data_jpa/07_data_jpa.iml" filepath="$PROJECT_DIR$/07_data_jpa/07_data_jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_spring_boot/08_spring_boot.iml" filepath="$PROJECT_DIR$/08_spring_boot/08_spring_boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_spring_boot_starter/09_spring_boot_starter.iml" filepath="$PROJECT_DIR$/09_spring_boot_starter/09_spring_boot_starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_spring_boot_starter_autoconfigurer/09_spring_boot_starter_autoconfigurer.iml" filepath="$PROJECT_DIR$/09_spring_boot_starter_autoconfigurer/09_spring_boot_starter_autoconfigurer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_spring_boot_starter_test/09_spring_boot_starter_test.iml" filepath="$PROJECT_DIR$/09_spring_boot_starter_test/09_spring_boot_starter_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_spring-boot-cache/10_spring-boot-cache.iml" filepath="$PROJECT_DIR$/10_spring-boot-cache/10_spring-boot-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_spring_boot_amqp/11_spring_boot_amqp.iml" filepath="$PROJECT_DIR$/11_spring_boot_amqp/11_spring_boot_amqp.iml" />
     </modules>
   </component>
 </project>

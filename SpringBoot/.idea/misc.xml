@@ -17,6 +17,14 @@
         <option value="$PROJECT_DIR$/03_web-restfulcrud/pom.xml" />
         <option value="$PROJECT_DIR$/04_web_jsp/pom.xml" />
         <option value="$PROJECT_DIR$/05_data_jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/06_data_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/07_data_jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/08_spring_boot/pom.xml" />
+        <option value="$PROJECT_DIR$/09_spring_boot_starter/pom.xml" />
+        <option value="$PROJECT_DIR$/09_spring_boot_starter_autoconfigurer/pom.xml" />
+        <option value="$PROJECT_DIR$/09_spring_boot_starter_test/pom.xml" />
+        <option value="$PROJECT_DIR$/10_spring-boot-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/11_spring_boot_amqp/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,6 +8,23 @@ server:
   servlet:
     context-path: /demo
 
+my:
+  name: shenrs
+  age: 23
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi, i'im ${my.name}
+  birth: 2018/02/03
+  map: {k1: k1, k2: k2}
+  list:
+    - zhangsan
+    - lisi
+  dog:
+    name: xiaowang
+    age: 3
+
 # 开启SpringBoot的debug
 debug: true
 ---
