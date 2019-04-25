@@ -21,6 +21,7 @@
         <module name="11_spring_boot_amqp" />
         <module name="12_spring_boot_elastic" />
         <module name="12_spring_boot_task" />
+        <module name="13_spring_boot_security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -42,6 +43,7 @@
       <module name="11_spring_boot_amqp" target="1.8" />
       <module name="12_spring_boot_elastic" target="1.8" />
       <module name="12_spring_boot_task" target="1.8" />
+      <module name="13_spring_boot_security" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

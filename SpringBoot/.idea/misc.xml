@@ -21,12 +21,12 @@
         <option value="$PROJECT_DIR$/07_data_jpa/pom.xml" />
         <option value="$PROJECT_DIR$/08_spring_boot/pom.xml" />
         <option value="$PROJECT_DIR$/09_spring_boot_starter/pom.xml" />
-        <option value="$PROJECT_DIR$/09_spring_boot_starter_autoconfigurer/pom.xml" />
         <option value="$PROJECT_DIR$/09_spring_boot_starter_test/pom.xml" />
         <option value="$PROJECT_DIR$/10_spring-boot-cache/pom.xml" />
         <option value="$PROJECT_DIR$/11_spring_boot_amqp/pom.xml" />
         <option value="$PROJECT_DIR$/12_spring_boot_elastic/pom.xml" />
         <option value="$PROJECT_DIR$/12_spring_boot_task/pom.xml" />
+        <option value="$PROJECT_DIR$/13_spring_boot_security/pom.xml" />
       </list>
     </option>
   </component>

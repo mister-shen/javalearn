@@ -1,5 +1,11 @@
 
 spring:
   mail:
-    username: 975943962@qq.com
-    password:
+    username: xxxxxxxxx@qq.com
+    password: wtugwsolfrbrbbib
+    host: smtp.qq.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true # 以qq邮箱为服务器，需要设置ssl为true
