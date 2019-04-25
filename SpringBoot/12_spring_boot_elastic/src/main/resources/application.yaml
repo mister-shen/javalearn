@@ -1,0 +1,11 @@
+spring:
+  # \u4F7F\u7528jest\u64CD\u4F5CES
+  elasticsearch:
+    jest:
+      uris: http://47.104.188.96:9200/
+
+  # \u4F7F\u7528 springdata \u64CD\u4F5CES
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: 47.104.188.96:9300

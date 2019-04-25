@@ -19,6 +19,8 @@
         <module name="09_spring_boot_starter_test" />
         <module name="10_spring-boot-cache" />
         <module name="11_spring_boot_amqp" />
+        <module name="12_spring_boot_elastic" />
+        <module name="12_spring_boot_task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -38,6 +40,8 @@
       <module name="09_spring_boot_starter_test" target="1.8" />
       <module name="10_spring-boot-cache" target="1.8" />
       <module name="11_spring_boot_amqp" target="1.8" />
+      <module name="12_spring_boot_elastic" target="1.8" />
+      <module name="12_spring_boot_task" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
