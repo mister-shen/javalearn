@@ -22,6 +22,9 @@
         <module name="12_spring_boot_elastic" />
         <module name="12_spring_boot_task" />
         <module name="13_spring_boot_security" />
+        <module name="14_spring_boot_dubbo_common" />
+        <module name="14_spring_boot_dubbo_consumer" />
+        <module name="14_spring_boot_dubbo_provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +47,11 @@
       <module name="12_spring_boot_elastic" target="1.8" />
       <module name="12_spring_boot_task" target="1.8" />
       <module name="13_spring_boot_security" target="1.8" />
+      <module name="14_spring_boot_dubbo_common" target="1.5" />
+      <module name="14_spring_boot_dubbo_consumer" target="1.8" />
+      <module name="14_spring_boot_dubbo_consumer_user" target="1.8" />
+      <module name="14_spring_boot_dubbo_provider" target="1.8" />
+      <module name="14_spring_boot_dubbo_provider_ticket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -16,10 +16,11 @@
       <module fileurl="file://$PROJECT_DIR$/10_spring-boot-cache/10_spring-boot-cache.iml" filepath="$PROJECT_DIR$/10_spring-boot-cache/10_spring-boot-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/11_spring_boot_amqp/11_spring_boot_amqp.iml" filepath="$PROJECT_DIR$/11_spring_boot_amqp/11_spring_boot_amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/12_spring_boot_elastic/12_spring_boot_elastic.iml" filepath="$PROJECT_DIR$/12_spring_boot_elastic/12_spring_boot_elastic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/12_spring_boot_elastic/12_spring_boot_elastic.iml" filepath="$PROJECT_DIR$/12_spring_boot_elastic/12_spring_boot_elastic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/12_spring_boot_task/12_spring_boot_task.iml" filepath="$PROJECT_DIR$/12_spring_boot_task/12_spring_boot_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/12_spring_boot_task/12_spring_boot_task.iml" filepath="$PROJECT_DIR$/12_spring_boot_task/12_spring_boot_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/13_spring_boot_security/13_spring_boot_security.iml" filepath="$PROJECT_DIR$/13_spring_boot_security/13_spring_boot_security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/14_spring_boot_dubbo_common.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/14_spring_boot_dubbo_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/14_spring_boot_dubbo_consumer.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/14_spring_boot_dubbo_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/14_spring_boot_dubbo_provider.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/14_spring_boot_dubbo_provider.iml" />
     </modules>
   </component>
 </project>

@@ -27,8 +27,19 @@
         <option value="$PROJECT_DIR$/12_spring_boot_elastic/pom.xml" />
         <option value="$PROJECT_DIR$/12_spring_boot_task/pom.xml" />
         <option value="$PROJECT_DIR$/13_spring_boot_security/pom.xml" />
+        <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/pom.xml" />
+        <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ZooKeeperConfig">
+    <option name="host" value="47.104.188.96" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
+  </component>
 </project>
