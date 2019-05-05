@@ -30,6 +30,8 @@
         <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/pom.xml" />
         <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/pom.xml" />
         <option value="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/pom.xml" />
+        <option value="$PROJECT_DIR$/15_spring_boot_spring_cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/16_spring_boot_actuator/pom.xml" />
       </list>
     </option>
   </component>

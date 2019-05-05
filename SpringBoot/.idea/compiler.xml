@@ -25,6 +25,8 @@
         <module name="14_spring_boot_dubbo_common" />
         <module name="14_spring_boot_dubbo_consumer" />
         <module name="14_spring_boot_dubbo_provider" />
+        <module name="15_spring_boot_spring_cloud" />
+        <module name="16_spring_boot_actuator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -52,6 +54,8 @@
       <module name="14_spring_boot_dubbo_consumer_user" target="1.8" />
       <module name="14_spring_boot_dubbo_provider" target="1.8" />
       <module name="14_spring_boot_dubbo_provider_ticket" target="1.8" />
+      <module name="15_spring_boot_spring_cloud" target="1.8" />
+      <module name="16_spring_boot_actuator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

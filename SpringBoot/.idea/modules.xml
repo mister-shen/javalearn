@@ -21,6 +21,8 @@
       <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/14_spring_boot_dubbo_common.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_common/14_spring_boot_dubbo_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/14_spring_boot_dubbo_consumer.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_consumer/14_spring_boot_dubbo_consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/14_spring_boot_dubbo_provider.iml" filepath="$PROJECT_DIR$/14_spring_boot_dubbo/14_spring_boot_dubbo_provider/14_spring_boot_dubbo_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15_spring_boot_spring_cloud/15_spring_boot_spring_cloud.iml" filepath="$PROJECT_DIR$/15_spring_boot_spring_cloud/15_spring_boot_spring_cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16_spring_boot_actuator/16_spring_boot_actuator.iml" filepath="$PROJECT_DIR$/16_spring_boot_actuator/16_spring_boot_actuator.iml" />
     </modules>
   </component>
 </project>
