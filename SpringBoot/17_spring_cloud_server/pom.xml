@@ -12,6 +12,7 @@
     <module>cloud_server_api</module>
     <module>cloud_server_provider_dept_8001</module>
       <module>cloud_server_consumer_dept_8101</module>
+      <module>cloud_server_eureka_7001</module>
   </modules>
 
   <name>17_spring_cloud_server</name>
