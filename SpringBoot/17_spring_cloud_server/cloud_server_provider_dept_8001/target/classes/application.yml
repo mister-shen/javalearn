@@ -1,12 +1,14 @@
 server:
   port: 8001
-  
+
+# mybatis 相关配置
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.shenrs.springcloud.eneites    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
 
+# druid相关配置
 spring:
   application:
     name: cloudserver-dept
@@ -60,19 +62,27 @@ spring:
         # 登录密码
         login-password: 123456
 
+# eureka相关配置
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
       defaultZone: http://localhost:7001/eureka
 #       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
-    instance-id: cloudserver-dept8001
+    instance-id: cloudserver-dept8001 # 自定义Eureka显示的名称
     prefer-ip-address: true     #访问路径可以显示IP地址
 
-#info:
-#  app.name: atguigu-microservicecloud
-#  company.name: www.atguigu.com
-#  build.artifactId: $project.artifactId$
-#  build.version: $project.version$
+
+# actuator监控信息配置
+info: #自定义eureka链接返回信息
+  app.name: cloudserver-dept8001
+  build.artifactId: cloud_server_provider_dept_8001
+  build.version: 1.0-SNAPSHOT
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'          #加载所有的端点，默认只加载了info、health
+
 
 

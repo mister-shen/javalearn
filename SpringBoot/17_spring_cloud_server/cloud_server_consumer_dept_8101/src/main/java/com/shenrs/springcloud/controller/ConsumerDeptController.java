@@ -2,9 +2,7 @@ package com.shenrs.springcloud.controller;
 
 import com.shenrs.springcloud.eneites.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
@@ -40,6 +38,12 @@ public class ConsumerDeptController {
     @GetMapping("/consumer/dept/list")
     public List<Dept> list(){
         return restTemplate.getForObject(REST_URL_PERFIX + "/dept/list", new ArrayList<Dept>().getClass());
+    }
+
+    @GetMapping("/consumer/dept/discovery")
+    public Object discovery()
+    {
+        return restTemplate.getForObject(REST_URL_PERFIX + "/dept/discovery", Object.class);
     }
 
 

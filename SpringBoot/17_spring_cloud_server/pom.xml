@@ -13,6 +13,8 @@
     <module>cloud_server_provider_dept_8001</module>
       <module>cloud_server_consumer_dept_8101</module>
       <module>cloud_server_eureka_7001</module>
+    <module>cloud_server_eureka_7002</module>
+    <module>cloud_server_eureka_7003</module>
   </modules>
 
   <name>17_spring_cloud_server</name>
