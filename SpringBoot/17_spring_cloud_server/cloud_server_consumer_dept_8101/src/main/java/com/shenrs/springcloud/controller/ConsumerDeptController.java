@@ -16,7 +16,8 @@ import java.util.List;
 @RestController
 public class ConsumerDeptController {
 
-    private static final String REST_URL_PERFIX = "http://localhost:8001";
+//    private static final String REST_URL_PERFIX = "http://localhost:8001";
+    private static final String REST_URL_PERFIX = "http://cloudserver-dept";
 
     /**
      * 使用restTemplate访问resetfull接口非常简单粗暴
