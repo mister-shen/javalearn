@@ -17,6 +17,12 @@
     <module>cloud_server_eureka_7003</module>
       <module>cloud_server_provider_dept_8002</module>
     <module>cloud_server_provider_dept_8003</module>
+      <module>cloud_server_consumer_dept_feign_8102</module>
+      <module>cloud_server_consumer_dept_feign_8102</module>
+      <module>cloud_server_provider_dept_hystrix_8001</module>
+      <module>cloud_server_consumer_hystrix_dashboard</module>
+      <module>cloud_server_zuul_gateway_9527</module>
+      <module>cloud_server_config_3344</module>
   </modules>
 
   <name>17_spring_cloud_server</name>

@@ -1,0 +1,31 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: cloudserver-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://erueka7001.com:7001/eureka/,http://erueka7002.com:7002/eureka/,http://erueka7003.com:7003/eureka/
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true #访问路径可以显示IP地址
+
+# 加之前http://localhost:9527/cloudserver-dept/dept/get/1
+zuul:
+  prefix: /shenrs   # 设置统一公共前缀    http://localhost:9527/shenrs/mydept/dept/get/1
+  #ignored-services: cloudserver-dept      #忽略单个微服务真实名字
+  ignored-services: "*"      #忽略所有的微服务真实名字
+  routes:
+    mydept:
+      serviceId: cloudserver-dept
+      path: /mydept/**  # 加之后http://localhost:9527/mydept/dept/get/1
+
+info:
+  app.name: cloudserver
+  company.name: www.shenrs.com
+
+
+
+

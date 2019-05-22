@@ -26,6 +26,7 @@ public class ConfigBean {
 
 
     /**
+     * 这是针对所访问的所有微服务
      * 自定义负载均衡算法
      * @return
      */

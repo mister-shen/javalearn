@@ -66,7 +66,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-      defaultZone: http://localhost:7001/eureka/,http://erueka7002.com:7002/eureka/,http://erueka7003.com:7003/eureka/
+      defaultZone: http://erueka7001.com:7001/eureka/,http://erueka7002.com:7002/eureka/,http://erueka7003.com:7003/eureka/
 #       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
   instance:
     instance-id: cloudserver-dept8003 # 自定义Eureka显示的名称
