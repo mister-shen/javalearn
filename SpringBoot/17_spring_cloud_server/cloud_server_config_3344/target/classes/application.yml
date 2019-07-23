@@ -7,4 +7,4 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:mister-shen/javalearn.git      #github上面的git仓库地址
+          uri: https:/git@github.com:mister-shen/javalearn.git #github上面的git仓库地址
