@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<config>
+<className>cn.shenrs.patterns.creational.factorymethod.news.FileLoggerFactory</className>
+</config>
