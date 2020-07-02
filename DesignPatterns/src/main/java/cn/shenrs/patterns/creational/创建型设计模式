@@ -1,0 +1,10 @@
+创建型设计模式分为以下6种：
+    模式名称	学习难度	使用频率
+    单例模式 Singleton Pattern	★☆☆☆☆	★★★★☆
+    简单工厂模式 Simple Factory Pattern	★★☆☆☆	★★★☆☆
+        拥有的角色：Product（抽象产品）、ConcreteProduct（具体产品）、Factory（工厂）
+    工厂方法模式 Factory Method Pattern	★★☆☆☆	★★★★★
+        拥有的角色：Product（抽象产品）、ConcreteProduct（具体产品）、Factory（抽象工厂）、ConcreteFactory（具体工厂）
+    抽象工厂模式 Abstract Factory Pattern	★★★★☆	★★★★★
+    原型模式 Prototype Pattern	★★★☆☆	★★★☆☆
+    建造者模式 Builder Pattern	★★★★☆	★★☆☆☆
