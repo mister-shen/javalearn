@@ -10,7 +10,7 @@
 
     <properties>
         <netty.version>5.0.0.Alpha1</netty.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
     <dependencies>
         <dependency>
